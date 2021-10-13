@@ -1,0 +1,73 @@
+.uninews .uninews-wrap{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+.uni-card{
+  width: 32%;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.131);
+}
+.uni-card .unicard-img{
+  width: 100%;
+  position: relative;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+}
+.uni-card .unicard-img:hover .uni_logo{
+  opacity: 1;
+}
+.uni-card .unicard-img .uni_logo{
+ background: rgba(138,27,27,.8);
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ opacity: 0;
+}
+.uni-card .unicard-img .uni_logo img{
+  width: 30%;
+}
+.uni-card .unicard-text{
+  position: relative;
+  padding: 0 30px;
+  margin-top: -5%;
+}
+.uni-card .unicard-text .card_p{
+  background: #bf2e2e;
+  width: 50%;
+  font-size: 13px;
+  color: #fff;
+  padding: 5px;
+  margin-bottom: 10px ;
+}
+.uni-card .unicard-text .card_h{
+  text-decoration: none;
+}
+.uni-card .unicard-text .card_h h1{
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: .5px;
+  margin-bottom: 20px;
+  color: #000;
+  text-decoration: none;
+}
+.uni-card .unicard-text .card_h h1:hover{
+  color: #bf2e2e;
+}
+@media screen and (max-width : 900px) {
+  .uni-card{
+    width: 48%;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width : 700px) {
+  .uni-card{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
