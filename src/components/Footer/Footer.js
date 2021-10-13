@@ -42,7 +42,7 @@ function Footer() {
             <li>Summer Uni</li>
           </ul>
         </div>
-        <div class="footer-card">
+        <div className="footer-card">
           <h1>Campus</h1>
           <ul>
             <li>Careers for Students</li>
