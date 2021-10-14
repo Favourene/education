@@ -21,7 +21,7 @@ ReactDOM.render(
       <Route exact path='/about'>
         <About />
       </Route>
-      <Route path='*'>
+      <Route exact path='/*'>
         <App />
       </Route>
     </Switch>
