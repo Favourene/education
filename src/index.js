@@ -1,7 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './index.css'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 // pages
 import Scroll from './pages/Scroll'
@@ -14,12 +14,17 @@ ReactDOM.render(
   <Router>
     <Scroll />
     <Navbar />
-    <Route exact path='/'>
-      <App />
-    </Route>
-    <Route exact path='/about'>
-      <About />
-    </Route>
+    <Switch>
+      <Route exact path='/'>
+        <App />
+      </Route>
+      <Route exact path='/about'>
+        <About />
+      </Route>
+      <Route path='*'>
+        <App />
+      </Route>
+    </Switch>
     <Footer />
   </Router>,
   document.getElementById('root')
