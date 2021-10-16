@@ -46,7 +46,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li onClick={handleToggle} className={isActive ? '' : 'fade'}>
-            <Link className='link' to='/'>
+            <Link className='link' to='/seminar'>
               Courses & Seminars
             </Link>
           </li>

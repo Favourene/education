@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import pin from './images/pin.png'
 import Image1 from './images/fact(1).jpg'
 import Image2 from './images/fact(2).jpg'
@@ -7,6 +7,9 @@ import Image4 from './images/fact(4).jpg'
 
 import './About.css'
 function About() {
+  useEffect(() => {
+    document.title = 'University - Education'
+  }, [])
   return (
     <>
       <div className='about_header'>

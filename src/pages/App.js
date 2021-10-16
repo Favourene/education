@@ -1,5 +1,5 @@
+import React, {useEffect} from 'react'
 import './App.css'
-import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/swiper-bundle.css'
 import SwiperCore, { Autoplay, Pagination, Navigation } from 'swiper'
@@ -11,6 +11,9 @@ import girl from './images/schoolgirl.png'
 SwiperCore.use([Autoplay, Pagination, Navigation])
 
 function App() {
+  useEffect(() => {
+    document.title = 'Education Template'
+  }, [])
   return (
     <div className='App'>
       <Swiper

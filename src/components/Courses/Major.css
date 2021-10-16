@@ -1,0 +1,83 @@
+.major {
+  width: 100%;
+}
+.major .cover {
+  height: 6rem;
+  background-color: #333;
+  width: 100%;
+}
+.major img {
+  width: 100%;
+  height: 100%;
+}
+.major .text {
+  padding: 50px;
+}
+.major .text h1 {
+  font-size: 40px;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+.major .text .info {
+  color: #444;
+  font-size: 18px;
+  line-height: 30px;
+  padding-bottom: 30px;
+}
+.major .text .details {
+  color: #444;
+  font-size: 18px;
+  line-height: 30px;
+  padding-bottom: 10px;
+}
+.major .schedule{
+ padding: 50px;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+}
+.major .schedule .card{
+ width: 30%;
+ display: flex;
+}
+.major .schedule .left{
+ background: crimson;
+ border-radius: 50%;
+ height: 50px;
+ width: 50px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.major .schedule .left img{
+ width: 20px;
+}
+.major .schedule .right{
+ padding-left: 20px;
+}
+.major .schedule .right h2{
+ font-weight: 100;
+}
+@media screen and (max-width:1000px) {
+ .major .text{
+  padding: 50px 20px;
+ }
+ .major .schedule{
+  padding: 50px 20px;
+ }
+}
+@media screen and (max-width:800px){
+ .major .schedule .card{
+  width: 48%;
+  padding-bottom: 30px;
+ }
+}
+@media screen and (max-width:500px){
+ .major .schedule .card{
+  width: 100%;
+  padding-bottom: 30px;
+ }
+ .major .text h1{
+  font-size: 30px;
+ }
+}

@@ -1,0 +1,97 @@
+.seminar_header {
+  height: 70vh;
+  background-image: url('./images/seminar.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  color: #fff;
+  padding: 50px;
+}
+.seminar_header h1 {
+  font-size: 50px;
+  padding-bottom: 20px;
+  font-weight: 300;
+}
+.seminar_header p {
+  color: #bbb;
+  font-size: 20px;
+  line-height: 30px;
+}
+@media screen and (max-width: 600px) {
+  .seminar_header {
+    padding: 50px 20px 20px 20px;
+  }
+  .seminar_header h1 {
+    font-size: 30px;
+  }
+  .seminar_header p {
+    font-size: 15px;
+  }
+}
+
+.seminar_wrapper{
+display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+.seminar_wrapper .course-card{
+  width: 48%;
+  background: #fff;
+  margin-bottom: 50px;
+}
+.seminar_wrapper .course-card .course-img{
+  width: 100%;
+  position: relative;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+}
+.seminar_wrapper .course-card .course-img:hover .uni_logo{
+  opacity: 1;
+}
+.seminar_wrapper .course-card .course-img .uni_logo{
+ background: rgba(138,27,27,.8);
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ opacity: 0;
+}
+.seminar_wrapper .course-card .course-img .uni_logo img{
+  width: 10%;
+}
+.seminar_wrapper .course-card .course_text{
+ text-align: center;
+}
+.seminar_wrapper .course-card .course_text a{
+ text-decoration: none;
+}
+.seminar_wrapper .course-card .course_text h1{
+ text-align: center;
+ color: #000;
+ font-weight: 100;
+ padding: 10px;
+ font-size: 23px;
+}
+.seminar_wrapper .course-card .course_text p{
+ color: rgba(39, 38, 38, 0.755);
+}
+@media screen and (max-width : 900px) {
+ .seminar_wrapper{
+  padding: 50px 20px;
+ }
+  .seminar_wrapper .course-card{
+    width: 48%;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width : 700px) {
+  .seminar_wrapper .course-card{
+    width: 100%;
+  }
+  
+}

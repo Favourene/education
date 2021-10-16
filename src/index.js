@@ -9,6 +9,8 @@ import Navbar from './components/Navbar/navbar'
 import Footer from './components/Footer/Footer'
 import App from './pages/App'
 import About from './pages/About'
+import Seminar from './pages/Seminars'
+import Major from './components/Courses/Major'
 
 ReactDOM.render(
   <Router>
@@ -21,7 +23,11 @@ ReactDOM.render(
       <Route exact path='/about'>
         <About />
       </Route>
-      <Route exact path='/*'>
+      <Route exact path='/seminar'>
+        <Seminar />
+      </Route>
+      <Route exact path='/major/:Tittle' children={<Major />}></Route>
+      <Route exact path='*'>
         <App />
       </Route>
     </Switch>
