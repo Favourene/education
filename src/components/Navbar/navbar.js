@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import Logo from './logo1.png'
 import Logo2 from './logo2.png'
 import './navbar.css'
@@ -31,29 +31,29 @@ const Navbar = () => {
         </div>
         <ul className={isActive ? 'nav-links' : 'nav-links open'}>
           <li onClick={handleToggle} className={isActive ? '' : 'fade'}>
-            <Link className='link' to='/'>
+            <NavLink activeClassName="navbar__link--active" className='link' to='/home'>
               Home
-            </Link>
+            </NavLink>
           </li>
           <li onClick={handleToggle} className={isActive ? '' : 'fade'}>
-            <Link className='link' to='/about'>
+            <NavLink activeClassName="navbar__link--active" className='link' to='/about'>
               About University
-            </Link>
+            </NavLink>
           </li>
           <li onClick={handleToggle} className={isActive ? '' : 'fade'}>
-            <Link className='link' to='/'>
+            <NavLink activeClassName="navbar__link--active" className='link' to='/news'>
               News
-            </Link>
+            </NavLink>
           </li>
           <li onClick={handleToggle} className={isActive ? '' : 'fade'}>
-            <Link className='link' to='/seminar'>
+            <NavLink activeClassName="navbar__link--active" className='link' to='/seminar'>
               Courses & Seminars
-            </Link>
+            </NavLink>
           </li>
           <li onClick={handleToggle} className={isActive ? '' : 'fade'}>
-            <Link className='link' to='/'>
+            <NavLink activeClassName="navbar__link--active" className='link' to='/contact'>
               Contact Us
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>

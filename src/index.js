@@ -5,17 +5,18 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 // pages
 import Scroll from './pages/Scroll'
-import Navbar from './components/Navbar/navbar'
 import Footer from './components/Footer/Footer'
 import App from './pages/App'
 import About from './pages/About'
+import Blog from './pages/Blog'
 import Seminar from './pages/Seminars'
+import Contact from './pages/Contact'
 import Major from './components/Courses/Major'
+import Magazine from './components/News/Magazine'
 
 ReactDOM.render(
   <Router>
     <Scroll />
-    <Navbar />
     <Switch>
       <Route exact path='/'>
         <App />
@@ -26,7 +27,14 @@ ReactDOM.render(
       <Route exact path='/seminar'>
         <Seminar />
       </Route>
-      <Route exact path='/major/:Tittle' children={<Major />}></Route>
+      <Route exact path='/news'>
+        <Blog />
+      </Route>
+      <Route exact path='/contact'>
+        <Contact/>
+      </Route>
+      <Route exact path='/seminar/:Tittle' children={<Major />}></Route>
+      <Route exact path='/news/:Tittle' children={<Magazine />}></Route>
       <Route exact path='*'>
         <App />
       </Route>

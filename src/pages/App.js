@@ -1,8 +1,10 @@
 import React, {useEffect} from 'react'
+import { Link } from 'react-router-dom'
 import './App.css'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/swiper-bundle.css'
 import SwiperCore, { Autoplay, Pagination, Navigation } from 'swiper'
+import Navbar from '../components/Navbar/navbar'
 import News from '../components/News/News'
 import Course from '../components/Courses/Courses'
 import pin from './images/pin.png'
@@ -16,6 +18,7 @@ function App() {
   }, [])
   return (
     <div className='App'>
+      <Navbar />
       <Swiper
         spaceBetween={0}
         centeredSlides={true}
@@ -30,27 +33,27 @@ function App() {
           <div className='swiper-wrap'>
             <p>OCTOBER 7, 2021</p>
             <h1>Hundeds of books in the University Library</h1>
-            <a href='#'>
+            <Link to={`/news/Hundeds of books in the University Library`}>
               <button>READ MORE</button>
-            </a>
+            </Link>
           </div>
         </SwiperSlide>
         <SwiperSlide className='slider two'>
           <div className='swiper-wrap'>
             <p>OCTOBER 8, 2021</p>
             <h1>Benefits from studying at Klaium University</h1>
-            <a href='#'>
+            <Link to={`/news/Benefits from studying at Klaium University`}>
               <button>READ MORE</button>
-            </a>
+            </Link>
           </div>
         </SwiperSlide>
         <SwiperSlide className='slider three'>
           <div className='swiper-wrap'>
             <p>OCTOBER 9, 2021</p>
             <h1>Gallery from the Convocation Party.</h1>
-            <a href='#'>
+            <Link to={`/news/Gallery from the Convocation Party.`}>
               <button>READ MORE</button>
-            </a>
+            </Link>
           </div>
         </SwiperSlide>
       </Swiper>

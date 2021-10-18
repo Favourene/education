@@ -1,39 +1,36 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './News.css'
 import news from './Newsdata'
 import Logo from './logo1.png'
-
-const New = ({ Image, Link, Date, Tittle }) => {
-  return (
-    <div className='uni-card'>
-      <div
-        className='unicard-img'
-        style={{
-          backgroundImage: `url(${Image})`,
-        }}
-      >
-        <a href={Link} className='uni_logo'>
-          <img src={Logo} alt='' />
-        </a>
-      </div>
-      <div className='unicard-text'>
-        <p className='card_p'>
-          <span>{Date}</span>
-        </p>
-        <a href={Link} className='card_h'>
-          <h1>{Tittle}</h1>
-        </a>
-      </div>
-    </div>
-  )
-}
 
 function News() {
   return (
     <>
       <div className='uninews-wrap'>
-        {news.map((neww) => {
-          return <New key={neww.id} {...neww}></New>
+        {news.slice(1,4).map((neww) => {
+          return (
+            <div key={neww.id} className='uni-card'>
+              <div
+                className='unicard-img'
+                style={{
+                  backgroundImage: `url(${neww.Image})`,
+                }}
+              >
+                <Link to={`/news/${neww.Tittle}`} className='uni_logo'>
+                  <img src={Logo} alt='' />
+                </Link>
+              </div>
+              <div className='unicard-text'>
+                <p className='card_p'>
+                  <span>{neww.Date}</span>
+                </p>
+                <Link to={`/news/${neww.Tittle}`} className='card_h'>
+                  <h1>{neww.Tittle}</h1>
+                </Link>
+              </div>
+            </div>
+          )
         })}
       </div>
     </>

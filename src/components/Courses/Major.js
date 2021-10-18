@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import Navbar from '../Navbar/navbar'
 import data from './Coursesdata'
 import { useParams } from 'react-router'
 import './Major.css'
@@ -29,13 +30,14 @@ function Major() {
    setLocation(newMajor.Location);
    setDate(newMajor.Date);
     document.title = newMajor.Header
-  }, [])
+  }, [Tittle])
 
   
 
 
   return (
     <>
+    <Navbar />
       <section className='major'>
         <div className='cover'></div>
         <div className='hero'>

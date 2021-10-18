@@ -74,6 +74,12 @@ nav .logo2 {
 .nav-links li .link:hover::after {
   width: 70%;
 }
+.navbar__link--active {
+  border-bottom: 3px solid #fff;
+}
+.stuck .navbar__link--active {
+  border-bottom: 3px solid #333;
+}
 
 /*Styling Hamburger Icon*/
 .hamburger div {

@@ -17,12 +17,12 @@ function Courses() {
                   backgroundImage: `url(${newdata.Image})`,
                 }}
               >
-                <Link to={`/major/${newdata.Tittle}`} className='uni_logo'>
+                <Link to={`/seminar/${newdata.Tittle}`} className='uni_logo'>
                   <img src={Logo} alt='' />
                 </Link>
               </div>
               <div className='course_text'>
-                <Link to={`/major/${newdata.Tittle}`}>
+                <Link to={`/seminar/${newdata.Tittle}`}>
                   <h1>{newdata.Tittle}</h1>
                 </Link>
                 <p>{newdata.Class}</p>

@@ -1,0 +1,129 @@
+.contact_header {
+  height: 70vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.515), rgba(0, 0, 0, 0.686)),
+    url('./images/worldmap1.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  color: #fff;
+  padding: 50px;
+}
+.contact_header h1 {
+  font-size: 50px;
+  padding-bottom: 20px;
+  font-weight: 300;
+}
+.contact_header p {
+  color: #bbb;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .contact_header {
+    padding: 50px 20px 20px 20px;
+  }
+  .contact_header h1 {
+    font-size: 30px;
+  }
+  .contact_header p {
+    font-size: 15px;
+  }
+}
+
+.contact_wrap {
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact_wrap .contact_head {
+  padding-bottom: 50px;
+}
+.contact_wrap .contact_head h1 {
+  font-size: 40px;
+  font-weight: 100;
+  padding-bottom: 10px;
+}
+.contact_wrap .contact_head p {
+  color: #444;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+.contact_wrap .contact_left {
+  width: 60%;
+}
+.contact_wrap .contact_left .card {
+  width: 100%;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e4e4e4;
+  padding: 10px 0;
+}
+.contact_wrap .contact_left .card label {
+  position: absolute;
+}
+.contact_wrap .contact_left .card input {
+  width: 100%;
+  padding: 0 60px;
+  border: none;
+  outline: none;
+  background: none;
+}
+.contact_wrap .contact_left .card textarea {
+  background-image: linear-gradient(#e4e4e4 1px, transparent 1px);
+  background-size: 100% 41px;
+  line-height: 41px;
+  padding: 10px 0 0;
+  height: 200px;
+  resize: none;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+.contact_wrap .contact_left .butt{
+ text-align: center;
+}
+.contact_wrap .contact_left .butt button{
+ border: none;
+ padding: 10px 20px;
+ color: #fff;
+ background: #7e0a22;
+}
+.contact_wrap .contact_left .butt button:hover{
+ color: #7e0a22;
+ border: 1px solid #7e0a22;
+ background: none;
+}
+.contact_wrap .contact_right {
+  width: 30%;
+}
+.contact_wrap .contact_right img {
+  width: 100%;
+}
+.contact_wrap .contact_right .contact_bottom p{
+padding-bottom: 10px;
+}
+.contact_wrap .contact_right .contact_bottom span{
+ color: #7e0a22;
+}
+
+@media screen and (max-width:800px) {
+ .contact_wrap{
+  padding: 50px 20px;
+ }
+ .contact_wrap .contact_left {
+  width: 100%;
+  padding-bottom: 50px;
+}
+ .contact_wrap .contact_right {
+  width: 100%;
+}
+.contact_wrap .contact_head{
+ text-align: center;
+}
+.contact_wrap .contact_head h1{
+ font-size: 30px;
+}
+}

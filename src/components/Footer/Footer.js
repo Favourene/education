@@ -11,7 +11,7 @@ function Footer() {
           <h1>Admission</h1>
           <ul>
             <li>
-              <Link to='/major/Architecture Class'>Academy of Design</Link>
+              <Link to='/seminar/Architecture Class'>Academy of Design</Link>
             </li>
             <li>
               <Link to='/about'>University Facilities</Link>
@@ -25,7 +25,7 @@ function Footer() {
               <Link to='/about'>University Staff</Link>
             </li>
             <li>
-              <Link to='/'>Contact the Uni</Link>
+              <Link to='/contact'>Contact the Uni</Link>
             </li>
           </ul>
         </div>

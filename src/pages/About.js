@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react'
+import Navbar from '../components/Navbar/navbar'
 import pin from './images/pin.png'
 import Image1 from './images/fact(1).jpg'
 import Image2 from './images/fact(2).jpg'
@@ -12,6 +13,7 @@ function About() {
   }, [])
   return (
     <>
+    <Navbar />
       <div className='about_header'>
         <div className='header_wrapper'>
           <h1>About the University</h1>
