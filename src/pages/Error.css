@@ -1,0 +1,32 @@
+.error_wrap {
+  height: 100vh;
+  background: url('./images/news.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.error_wrap .container {
+  width: 40%;
+  text-align: center;
+}
+.error_wrap .container h1 {
+  font-size: 200px;
+  background-image: url('./images/location.png');
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.error_wrap .container button{
+ background: rgb(82, 7, 22);
+ color: #fff;
+ padding: 10px 20px;
+ border: none;
+ cursor: pointer;
+}
+.error_wrap .container h2 {
+padding-bottom: 10px;
+}
+.error_wrap .container p {
+padding-bottom: 30px;
+}

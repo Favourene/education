@@ -31,7 +31,7 @@ const Navbar = () => {
         </div>
         <ul className={isActive ? 'nav-links' : 'nav-links open'}>
           <li onClick={handleToggle} className={isActive ? '' : 'fade'}>
-            <NavLink activeClassName="navbar__link--active" className='link' to='/home'>
+            <NavLink activeClassName="navbar__link" className='link' to='/'>
               Home
             </NavLink>
           </li>

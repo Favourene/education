@@ -13,6 +13,7 @@ import Seminar from './pages/Seminars'
 import Contact from './pages/Contact'
 import Major from './components/Courses/Major'
 import Magazine from './components/News/Magazine'
+import Error from './pages/Error'
 
 ReactDOM.render(
   <Router>
@@ -36,7 +37,7 @@ ReactDOM.render(
       <Route exact path='/seminar/:Tittle' children={<Major />}></Route>
       <Route exact path='/news/:Tittle' children={<Magazine />}></Route>
       <Route exact path='*'>
-        <App />
+        <Error />
       </Route>
     </Switch>
     <Footer />
