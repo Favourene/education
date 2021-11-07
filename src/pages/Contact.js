@@ -36,7 +36,12 @@ function Contact() {
              <p style={{ color: 'green' }}>Thanks for your message! </p>
            )}
          </div>
-         <form action='' name='contact' method='POST' data-netlify='true'>
+         <form
+           action='https://www.google.com/'
+           name='contact'
+           method='POST'
+           data-netlify='true'
+         >
            <input type='hidden' name='form-name' value='contact' />
            <div className='card'>
              <label htmlFor='name'>Name:</label>
