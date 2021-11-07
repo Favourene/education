@@ -29,8 +29,10 @@ function Contact() {
            <h1>Send a message</h1>
            <p>Get in touch with the University staff.</p>
          </div>
-         <form action=''>
-           <div><input type="hidden" name="Contact" value="contact" /></div>
+         <form name='contact' method='POST' data-netlify='true'>
+           <div>
+             <input type='hidden' name='Contact' value='contact' />
+           </div>
            <div className='card'>
              <label htmlFor='name'>Name:</label>
              <input type='text' name='Name' id='' />
@@ -44,7 +46,7 @@ function Contact() {
              <textarea name='Message' id='' cols='30' rows='10'></textarea>
            </div>
            <div className='butt'>
-             <button type="submit">Send Message</button>
+             <button type='submit'>Send Message</button>
            </div>
          </form>
        </div>
