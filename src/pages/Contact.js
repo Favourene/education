@@ -41,10 +41,6 @@ function Contact() {
              <input type='email' name='email' id='' />
            </div>
            <div className='card'>
-             <label htmlFor='password'>E-mail:</label>
-             <input type='password' name='password' id='' />
-           </div>
-           <div className='card'>
              <label htmlFor='Message'>Message:</label>
              <textarea name='message' id='' cols='30' rows='10'></textarea>
            </div>
