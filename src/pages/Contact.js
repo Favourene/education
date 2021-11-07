@@ -29,21 +29,19 @@ function Contact() {
            <h1>Send a message</h1>
            <p>Get in touch with the University staff.</p>
          </div>
-         <form name='contact' method='POST' data-netlify='true'>
-           <div>
-             <input type='hidden' name='Contact' value='contact' />
-           </div>
+         <form action='' name='contact' method='POST' data-netlify='true'>
+           <input type='hidden' name='form-name' value='contact' />
            <div className='card'>
              <label htmlFor='name'>Name:</label>
-             <input type='text' name='Name' id='' />
+             <input type='text' name='name' id='' />
            </div>
            <div className='card'>
              <label htmlFor='email'>E-mail:</label>
-             <input type='email' name='Email' id='' />
+             <input type='email' name='email' id='' />
            </div>
            <div className='card'>
              <label htmlFor='Message'>Message:</label>
-             <textarea name='Message' id='' cols='30' rows='10'></textarea>
+             <textarea name='message' id='' cols='30' rows='10'></textarea>
            </div>
            <div className='butt'>
              <button type='submit'>Send Message</button>
