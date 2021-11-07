@@ -1,12 +1,16 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import Navbar from '../components/Navbar/navbar'
 import './Contact.css'
 import House from './images/location.png'
 
+
 function Contact() {
+  const [success, setSuccess] = useState(false)
  useEffect (()=>{
   document.title = "Contact - Education"
- })
+   if (window.location.search.includes('success=true')) {
+     setSuccess(true)
+   } },[]);
  return (
    <>
      <Navbar />
@@ -28,6 +32,9 @@ function Contact() {
          <div className='contact_head'>
            <h1>Send a message</h1>
            <p>Get in touch with the University staff.</p>
+           {success && (
+             <p style={{ color: 'green' }}>Thanks for your message! </p>
+           )}
          </div>
          <form action='' name='contact' method='POST' data-netlify='true'>
            <input type='hidden' name='form-name' value='contact' />
