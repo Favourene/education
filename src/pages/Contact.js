@@ -12,10 +12,14 @@ function Contact() {
      <Navbar />
      <div className='contact_header'>
        <div className='header_wrapper'>
-         <h1>Get In touch, <br /> </h1>
+         <h1>
+           Get In touch, <br />{' '}
+         </h1>
          <p>
-           Received shutters expenses ye he pleasant. Drift as blind above at up <br />
-           No up Simple county stairs do should praise as. Drawings sir had smallest.
+           Received shutters expenses ye he pleasant. Drift as blind above at up{' '}
+           <br />
+           No up Simple county stairs do should praise as. Drawings sir had
+           smallest.
          </p>
        </div>
      </div>
@@ -26,20 +30,21 @@ function Contact() {
            <p>Get in touch with the University staff.</p>
          </div>
          <form action=''>
+           <div><input type="hidden" name="Contact" value="contact" /></div>
            <div className='card'>
              <label htmlFor='name'>Name:</label>
-             <input type='text' name='' id='' />
+             <input type='text' name='Name' id='' />
            </div>
            <div className='card'>
              <label htmlFor='email'>E-mail:</label>
-             <input type='email' name='' id='' />
+             <input type='email' name='Email' id='' />
            </div>
            <div className='card'>
              <label htmlFor='Message'>Message:</label>
-             <textarea name='' id='' cols='30' rows='10'></textarea>
+             <textarea name='Message' id='' cols='30' rows='10'></textarea>
            </div>
            <div className='butt'>
-             <button>Send Message</button>
+             <button type="submit">Send Message</button>
            </div>
          </form>
        </div>
